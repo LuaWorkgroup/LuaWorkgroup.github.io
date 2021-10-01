@@ -1,0 +1,21 @@
+{
+   "category"    : "File System and OS",
+   "name"        : "luaposix",
+   "link"        : "https://github.com/luaposix/luaposix",
+   "description" : "Bindings for POSIX APIs, including curses.",
+
+   "status" :
+   {
+      "active"     : true,
+      "help"       : false,
+      "maintainer" : true
+   },
+
+   "lua" :
+   {
+      "51" : true,
+      "52" : true,
+      "53" : false,
+      "54" : false
+   }
+}

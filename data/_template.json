@@ -1,0 +1,21 @@
+{
+   "category"    : "",
+   "name"        : "",
+   "link"        : "",
+   "description" : "",
+
+   "status" :
+   {
+      "active"     : true,
+      "help"       : false,
+      "maintainer" : false
+   },
+
+   "lua" :
+   {
+      "51" : null,
+      "52" : null,
+      "53" : null,
+      "54" : null
+   }
+}

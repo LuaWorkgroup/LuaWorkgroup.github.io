@@ -1,0 +1,21 @@
+{
+   "category"    : "File System and OS",
+   "name"        : "lunix",
+   "link"        : "http://25thandclement.com/~william/projects/lunix.html",
+   "description" : "Bindings to common Unix system APIs, striving for thread-safety.",
+
+   "status" :
+   {
+      "active"     : true,
+      "help"       : false,
+      "maintainer" : false
+   },
+
+   "lua" :
+   {
+      "51" : true,
+      "52" : true,
+      "53" : true,
+      "54" : false
+   }
+}

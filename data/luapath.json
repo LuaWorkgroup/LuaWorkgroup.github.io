@@ -1,0 +1,21 @@
+{
+   "category"    : "File System and OS",
+   "name"        : "lua-path",
+   "link"        : "https://github.com/moteus/lua-path",
+   "description" : "File system path manipulation library.",
+
+   "status" :
+   {
+      "active"     : true,
+      "help"       : false,
+      "maintainer" : false
+   },
+
+   "lua" :
+   {
+      "51" : true,
+      "52" : true,
+      "53" : true,
+      "54" : false
+   }
+}

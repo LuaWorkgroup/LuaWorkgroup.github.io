@@ -1,0 +1,21 @@
+{
+   "category"    : "time",
+   "name"        : "cron",
+   "link"        : "https://github.com/kikito/cron.lua",
+   "description" : "Time-related functions for Lua, inspired by JavaScript's setTimeout and setInterval.",
+
+   "status" :
+   {
+      "active"     : false,
+      "help"       : true,
+      "maintainer" : true
+   },
+
+   "lua" :
+   {
+      "51" : null,
+      "52" : false,
+      "53" : true,
+      "54" : true
+   }
+}

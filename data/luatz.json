@@ -1,0 +1,21 @@
+{
+   "category"    : "time",
+   "name"        : "luatz",
+   "link"        : "https://github.com/daurnimator/luatz",
+   "description" : "Time, date, and timezone library.",
+
+   "status" :
+   {
+      "active"     : true,
+      "help"       : false,
+      "maintainer" : false
+   },
+
+   "lua" :
+   {
+      "51" : true,
+      "52" : true,
+      "53" : true,
+      "54" : false
+   }
+}

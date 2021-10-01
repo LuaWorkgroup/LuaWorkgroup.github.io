@@ -1,9 +1,77 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Lua Workgroup</title>
-  </head>
-  <body>
-    <p>hello Lua workgroup</p>
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+   <head>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>I love Lua</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <!-- the used glyphs are listed here https://www.w3schools.com/bootstrap/bootstrap_ref_comp_glyphs.asp -->
+      <script type="text/javascript" src="I_love_Lua.js"></script>
+      <link rel="stylesheet" type="text/css" href="I_love_Lua.css" />
+
+   </head>
+
+   <body>
+
+      <h1><span class="yellow">I love </span>Lua</h1>
+      <h2>Created by the <a href="https://github.com/LuaWorkgroup" target="_blank">Lua Workgroup</a></h2>
+
+      <div class="maincontainer">
+
+         <!-- <div class="statistics"> -->
+         <!--    <div id="myProgress"> <div id="myBar">10%</div> </div> -->
+         <!-- </div> -->
+
+         <div class="filter">
+            <input type="text" id="searchbox" onkeyup="filterTable()" placeholder="Search ..." title="search for a Lua module">
+            <div class="dropdown">
+               <div class="select">
+                  <span>All</span>
+               </div>
+               <input type="hidden" name="gender">
+               <ul class="dropdown-menu">
+                  <li id="ddmall">All</li>
+                  <li id="ddmout">Outdated</li>
+                  <li id="ddmlua54">Lua 5.4 (Up To Date)</li>
+                  <li id="ddmlua53">Lua 5.3</li>
+                  <li id="ddmlua52">Lua 5.2</li>
+                  <li id="ddmlua51">Lua 5.1</li>
+                  <li id="ddmactive">Active</li>
+                  <li id="ddmdead">Dead</li>
+                  <li id="ddmnew">New Maintainer</li>
+                  <li id="ddmhelp">Need Help</li>
+               </ul>
+            </div>
+         </div>
+
+         <table class="data">
+            <thead>
+               <tr class="dataheader">
+                  <th><h1>Name</h1></th>
+                  <th><h1>Description</h1></th>
+                  <th><h1>Status</h1></th>
+                  <th><h1>5.1</h1></th>
+                  <th><h1>5.2</h1></th>
+                  <th><h1>5.3</h1></th>
+                  <th><h1>5.4</h1></th>
+               </tr>
+            </thead>
+            <tbody id="databody">
+            </tbody>
+         </table>
+
+      </div>
+
+      <h2>Thank you <a href="https://github.com/pablorgarcia" target="_blank">Pablo García Fernández</a> for this awesome <a href="https://codepen.io/heypablete/pen/qdIsm" target="_blank">template</a></h2>
+
+   </body>
+
 </html>
+
+<!-- vim: fdm=indent
+-->
