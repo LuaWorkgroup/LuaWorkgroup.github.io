@@ -238,6 +238,37 @@ and this prints ...
     67
     134
 
-The take away of this chapter is simply that we have to take care of the things we expect from these functions, and that
+The take away of this section is simply that we have to take care of the things we expect from these functions, and that
 for `__newindex` we have to use `rawset()` if we want to set the value in the table, otherwise we get recursive calls.
+
+## Tables for `__index` and `__newindex`
+
+I mentioned in the beginning that instead of functions, `__index` and `__newindex` can also be used with tables. Means
+instead of providing a function, we provide a table. So then, let's create 2 more tables. So as we know the `__index`
+(reading) and `__newindex` (writing) events are only triggered if they keys dont't exist in the table `T`. But `__index`
+will read the value from the `LookItUpHereTable` table, and `__newindex` will set the value in the `WriteItBackHereTable` table.
+
+    T = { }
+
+    LookItUpHereTable =
+    {
+       IDontExistInT = "I don't exist in T, but I exist in the look up table"
+    }
+
+    WriteItBackHereTable = { }
+
+    M =
+    {
+        __index    = LookItUpHereTable,
+        __newindex = WriteItBackHereTable,
+    }
+
+    setmetatable(T, M)
+
+    -- trigger the __index event and get value from the LookItUpHereTable table
+    print(T.IDontExistInT)
+
+    -- trigger the __newindex event and set the value in the WriteItBackHereTable table
+    T.NewIndex = "I am new"
+    print(WriteItBackHereTable.NewIndex)
 
