@@ -272,3 +272,38 @@ will read the value from the `LookItUpHereTable` table, and `__newindex` will se
     T.NewIndex = "I am new"
     print(WriteItBackHereTable.NewIndex)
 
+
+## Extra Info
+
+In all examples I used separate tables to show which table contains the event information, but Lua has not restrictions
+here. We can also put the events and data in the same table.
+
+    T =
+    {
+        Foo     = 123,
+        __index = function(t,k) return 456 end,
+    }
+
+    setmetatable(T, T)
+
+    print(T.Foo)
+    print(T.Bar)
+
+Also, Lua doesn't forbid using the *metatable* as the `__index` table.
+
+    T = { }
+    
+    M =
+    {
+        IDontExistInT = "I exist in M"
+    }
+    
+    M.__index = M
+    
+    setmetatable(T, M)
+    
+    print(T.IDontExistInT)
+
+We won't discuss it here, because there are already so many Lua OOP tutorials, but these mechanism are used for realizing
+an OOP like behavior in Lua. I hope that what you have learned here will help you to understand the OOP tutorials or
+give you ideas what you could do with these *metatables*.
