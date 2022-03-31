@@ -127,10 +127,9 @@ these functions. In this section we learn what these functions parameters are.
     - `t1` is the left operand of the plus operator
     - `t2` is the right operand of the plus operator
 
-Here the new and slightly extended code using the new information. If you execute it and follow the printed output then
-you should be able to understand what is what. Some more info on the parameters. The names of the parameters can be
+Let's extended code using the new information. If you execute it and follow the printed output along with the code, then
+you should be able to understand what is what. Some more info on the parameters - the names of the parameters can be
 chosen freely. Also for the `__call` event you can replace the `...` with named parameters.
-
 
     T = { }
     print("I'm table", T)
@@ -165,7 +164,6 @@ chosen freely. Also for the `__call` event you can replace the `...` with named 
     -- trigger the __add event
     local Sum = T + T
 
-
 If you execute this it prints for example ...
 
     I'm table	table: 0x7ffd72d03f50
@@ -175,4 +173,71 @@ If you execute this it prints for example ...
     you are using the + operator on the tables 'table: 0x7ffd72d03f50' and 'table: 0x7ffd72d03f50'
 
 
-The code isn't still doing much, but this will change in the next section.
+## Implementing the behavior
+
+You may have noticed that besides printing text on screen nothing is happening. The values didn't get created, nothing
+was assigned, etc. Sure that's simply because we only called `print()` in our functions, but we are responsible for
+implementing the desired behavior. The behavior is really up to you. If you only want to print e.g. an error message
+saying *'this key does not exist'* for the `__index` event, then that's what you can do. Lua will not tell you how to
+use these events.
+
+But let's assume we want to implement the things we would expect from the lines that trigger the events.
+
+    T =
+    {
+       Value = 55
+    }
+    
+    M =
+    {
+       __index    = function(t,k)
+                    -- return some default value
+                       return 123
+                    end,
+    
+       __newindex = function(t,k,v)
+                    -- here we need to use the rawset() function, because if we would
+                    -- write t[k]=v then we would trigger again __newindex, which would execute this function again and so on.
+                    -- rawset() does the same but without triggering __newindex, means it prevents such recursive calls.
+                       rawset(t,k,v)
+                    end,
+    
+       __call     = function(t,addme)
+                    -- as an example let's just add the parameter to T.Value, but you can code what you want
+                       T.Value = T.Value + addme
+                    end,
+    
+       __add      = function(t1,t2)
+                    -- I don't think this needs much explanation
+                        return t1.Value + t2.Value
+                    end,
+    }
+    
+    setmetatable(T, M)
+    
+    -- trigger the __index event
+    local Foo = T.foo
+    print(Foo)
+    
+    -- trigger the __newindex event
+    T.Foo = "foo"
+    print(T.Foo)
+    
+    -- trigger the __call event
+    T(12)
+    print(T.Value)
+    
+    -- trigger the __add event
+    local Sum = T + T
+    print(Sum)
+
+and this prints ...
+
+    123
+    foo
+    67
+    134
+
+The take away of this chapter is simply that we have to take care of the things we expect from these functions, and that
+for `__newindex` we have to use `rawset()` if we want to set the value in the table, otherwise we get recursive calls.
+
