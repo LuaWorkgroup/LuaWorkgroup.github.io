@@ -107,3 +107,72 @@ Now we have learned the very basics of *metatables*, but this is the most import
 concept. At the moment the functions don't do much except for the printing, and therefore we will learn in the next chapter
 about the parameters of the *"event-action"* functions we just created.
 
+
+## The Function Parameters
+
+We were able to trigger the event functions, but what I did not tell you is that Lua also passes some parameters to
+these functions. In this section we learn what these functions parameters are.
+
+- `__index = function(t, k) print(t,k) end`
+    - `t` is the table of which we tried to access the non-existing key
+    - `k` is the non-existing key
+- `__newindex = function(t, k, v) print(t,k,v) end`
+    - `t` is the table for which we tried to add a new element
+    - `k` is the key we tried to create
+    - `v` is the value we wanted to assign
+- `__call = function(t, ...) print(t,...) end`
+    - `t` is the table we called like a function
+    - `...` are all parameters passed in parantheses
+- `__add = function(t1,t2) print(t1,t2) end`
+    - `t1` is the left operand of the plus operator
+    - `t2` is the right operand of the plus operator
+
+Here the new and slightly extended code using the new information. If you execute it and follow the printed output then
+you should be able to understand what is what. Some more info on the parameters. The names of the parameters can be
+chosen freely. Also for the `__call` event you can replace the `...` with named parameters.
+
+
+    T = { }
+    print("I'm table", T)
+
+    M =
+    {
+        __index    = function(t,k)
+                        print(string.format("the key '%s' does not exist in table '%s'", k, t))
+                     end,
+        __newindex = function(t,k,v)
+                        print(string.format("you want to create a new key '%s' in table '%s' and assign the value '%s'", k, t, v))
+                     end,
+        __call     = function(t,...)
+                        print(string.format("you are calling '%s' like a function with the parameters", t), ...)
+                     end,
+        __add      = function(t1,t2)
+                        print(string.format("you are using the + operator on the tables '%s' and '%s'", t1, t2))
+                     end,
+    }
+
+    setmetatable(T, M)
+
+    -- trigger the __index event
+    local Foo = T.foo
+
+    -- trigger the __newindex event
+    T.foo = "bar"
+
+    -- trigger the __call event
+    T(1,2,3)
+
+    -- trigger the __add event
+    local Sum = T + T
+
+
+If you execute this it prints for example ...
+
+    I'm table	table: 0x7ffd72d03f50
+    the key 'foo' does not exist in table 'table: 0x7ffd72d03f50'
+    you want to create a new key 'foo' in table 'table: 0x7ffd72d03f50' and assign the value 'bar'
+    you are calling 'table: 0x7ffd72d03f50' like a function with the parameters	1	2	3
+    you are using the + operator on the tables 'table: 0x7ffd72d03f50' and 'table: 0x7ffd72d03f50'
+
+
+The code isn't still doing much, but this will change in the next section.
