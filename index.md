@@ -19,3 +19,6 @@ can also search and filter.
 We want to compare available [package managers](package_managers/package_managers.md) and give an
 overview on their features.
 
+## Tutorials
+- [metatables](tutorials/metatables/metatables.md)
+
