@@ -1,6 +1,6 @@
 # Lua Metatables
 
-Lua is a minimalistic but powerful scripting language, that only provides few smart mechanisms and doesn't anything,
+Lua is a minimalistic but powerful scripting language, that only provides few smart mechanisms and doesn't enforce anything,
 which gives us a lot of freedom. One of these mechanisms is the *metatable*. I don't even know if other languages have
 such thing. Some people think that *metatables* are the Lua *classes*, but that is not really true. Yes, you can mimic OOP
 using *metatables*, but as mentioned before Lua doesn't enforce anything and you can use them for whatever you can think of.
