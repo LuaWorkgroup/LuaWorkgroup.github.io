@@ -127,7 +127,7 @@ these functions. In this section we learn what these functions parameters are.
     - `t1` is the left operand of the plus operator
     - `t2` is the right operand of the plus operator
 
-Let's extended code using the new information. If you execute it and follow the printed output along with the code, then
+Let's extend the code using the new information. If you execute it and follow the printed output along with the code, then
 you should be able to understand what is what. Some more info on the parameters - the names of the parameters can be
 chosen freely. Also for the `__call` event you can replace the `...` with named parameters.
 
