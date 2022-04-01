@@ -104,8 +104,8 @@ If you execute this it prints ...
 
 
 Now we have learned the very basics of *metatables*, but this is the most important part, because it explains the event
-concept. At the moment the functions don't do much except for the printing, and therefore we will learn in the next chapter
-about the parameters of the *"event-action"* functions we just created.
+concept. At the moment the functions don't do much except for the printing, and therefore we will learn in the next
+section about the parameters of the *"event-action"* functions we just created.
 
 
 ## The Function Parameters
