@@ -24,3 +24,5 @@ overview on their features.
 - [integration guide](https://lua.msys.ch/lua-integration-guide.html)
 - [metatables](tutorials/metatables/metatables.md)
 
+## Documentation
+- [Lua manuals as Markdown files](https://github.com/axa-dev/lua-plaintext-docs)
