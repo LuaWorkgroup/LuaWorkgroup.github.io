@@ -20,5 +20,7 @@ We want to compare available [package managers](package_managers/package_manager
 overview on their features.
 
 ## Tutorials
+- [beginners guide](https://github.com/pohka/Lua-Beginners-Guide)
+- [integration guide](https://lua.msys.ch/lua-integration-guide.html)
 - [metatables](tutorials/metatables/metatables.md)
 
