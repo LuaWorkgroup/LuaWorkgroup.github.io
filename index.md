@@ -23,6 +23,7 @@ overview on their features.
 - [beginners guide](https://github.com/pohka/Lua-Beginners-Guide)
 - [integration guide](https://lua.msys.ch/lua-integration-guide.html)
 - [metatables](tutorials/metatables/metatables.md)
+- [videos](https://www.youtube.com/playlist?list=PL0o3fqwR2CsWg_ockSMN6FActmMOJ70t_)
 
 ## Documentation
 - [Lua manuals as Markdown files](https://github.com/axa-dev/lua-plaintext-docs)
