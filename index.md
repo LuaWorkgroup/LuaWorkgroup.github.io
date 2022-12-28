@@ -19,6 +19,11 @@ can also search and filter.
 We want to compare available [package managers](package_managers/package_managers.md) and give an
 overview on their features.
 
+## Lua Language Server
+
+Here is a [Lua Language Server](https://github.com/sumneko/lua-language-server) that implements the
+[LSP](https://langserver.org/) in pure Lua.
+
 ## Tutorials
 - [beginners guide](https://github.com/pohka/Lua-Beginners-Guide)
 - [integration guide](https://lua.msys.ch/lua-integration-guide.html)
