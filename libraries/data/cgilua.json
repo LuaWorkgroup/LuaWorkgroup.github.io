@@ -1,0 +1,21 @@
+{
+   "name"        : "CGILua",
+   "description" : "CGILua is a tool for creating dynamic HTML pages and manipulating input data from Web forms",
+   "link"        : "https://github.com/lunarmodules/cgilua",
+   "tags"        : {"hmtl","cgi"},
+
+   "status" :
+   {
+      "active"     : true,
+      "help"       : false,
+      "maintainer" : false
+   },
+
+   "lua" :
+   {
+      "51" : true,
+      "52" : true,
+      "53" : true,
+      "54" : true
+   }
+}

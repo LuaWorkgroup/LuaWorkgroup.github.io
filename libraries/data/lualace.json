@@ -1,8 +1,8 @@
 {
-   "name"        : "luatz",
-   "description" : "Time, date, and timezone library.",
-   "link"        : "https://github.com/daurnimator/luatz",
-   "tags"        : {"time","date","timezone"},
+   "name"        : "Lace",
+   "description" : "Lua Access Control Engine",
+   "link"        : "https://github.com/lunarmodules/lua-lace",
+   "tags"        : {},
 
    "status" :
    {

@@ -1,0 +1,21 @@
+{
+   "name"        : "expadom",
+   "description" : "An XML DOM Level 2 Core implementation in Lua, based on the (Lua)Expat parser",
+   "link"        : "https://github.com/lunarmodules/expadom",
+   "tags"        : {"xml","dom"},
+
+   "status" :
+   {
+      "active"     : true,
+      "help"       : false,
+      "maintainer" : false
+   },
+
+   "lua" :
+   {
+      "51" : true,
+      "52" : true,
+      "53" : true,
+      "54" : true
+   }
+}

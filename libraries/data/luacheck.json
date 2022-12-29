@@ -1,0 +1,21 @@
+{
+   "name"        : "Luacheck",
+   "description" : "A tool for linting and static analysis of Lua code",
+   "link"        : "https://github.com/lunarmodules/luacheck",
+   "tags"        : {"linter","linting","static analysis","code checker"},
+
+   "status" :
+   {
+      "active"     : true,
+      "help"       : false,
+      "maintainer" : false
+   },
+
+   "lua" :
+   {
+      "51" : true,
+      "52" : true,
+      "53" : true,
+      "54" : true
+   }
+}

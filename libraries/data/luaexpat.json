@@ -1,8 +1,8 @@
 {
-   "name"        : "lua-path",
-   "description" : "File system path manipulation library.",
-   "link"        : "https://github.com/moteus/lua-path",
-   "tags"        : {"file system","operating system"},
+   "name"        : "LuaExpat",
+   "description" : "LuaExpat is a SAX XML parser based on the Expat library",
+   "link"        : "https://github.com/lunarmodules/luaexpat",
+   "tags"        : {"sax","xml"},
 
    "status" :
    {

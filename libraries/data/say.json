@@ -1,0 +1,21 @@
+{
+   "name"        : "Say",
+   "description" : "Lua string hashing library, useful for internationalization",
+   "link"        : "https://github.com/lunarmodules/say",
+   "tags"        : {"string","hashing"},
+
+   "status" :
+   {
+      "active"     : true,
+      "help"       : false,
+      "maintainer" : false
+   },
+
+   "lua" :
+   {
+      "51" : true,
+      "52" : true,
+      "53" : true,
+      "54" : null
+   }
+}

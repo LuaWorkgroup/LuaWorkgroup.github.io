@@ -1,8 +1,8 @@
 {
-   "category"    : "time",
    "name"        : "LuaDate",
-   "link"        : "https://github.com/Tieske/date",
    "description" : "Date and time module with parsing, formatting, addition/subtraction, localization, and ISO 8601 support.",
+   "link"        : "https://github.com/Tieske/date",
+   "tags"        : {"time","date"},
 
    "status" :
    {
@@ -16,6 +16,6 @@
       "51" : true,
       "52" : true,
       "53" : true,
-      "54" : false
+      "54" : true
    }
 }

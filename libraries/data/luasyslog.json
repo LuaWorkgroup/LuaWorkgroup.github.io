@@ -1,0 +1,21 @@
+{
+   "name"        : "luasyslog",
+   "description" : "Addon for lualogging to log to the system log on unix systems",
+   "link"        : "https://github.com/lunarmodules/luasyslog",
+   "tags"        : {"syslog","log","logging","unix"},
+
+   "status" :
+   {
+      "active"     : false,
+      "help"       : false,
+      "maintainer" : false
+   },
+
+   "lua" :
+   {
+      "51" : true,
+      "52" : true,
+      "53" : true,
+      "54" : true
+   }
+}

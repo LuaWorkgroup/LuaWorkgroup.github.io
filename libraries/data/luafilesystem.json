@@ -1,12 +1,12 @@
 {
-   "category"    : "File System and OS",
    "name"        : "LuaFileSystem",
-   "link"        : "http://keplerproject.github.io/luafilesystem/",
    "description" : "Extends and complements Lua's built-in set of file system functions.",
+   "link"        : "https://github.com/lunarmodules/luafilesystem",
+   "tags"        : {"file system","operating system"},
 
    "status" :
    {
-      "active"     : true,
+      "active"     : false,
       "help"       : false,
       "maintainer" : false
    },
@@ -16,6 +16,6 @@
       "51" : true,
       "52" : true,
       "53" : true,
-      "54" : false
+      "54" : true
    }
 }

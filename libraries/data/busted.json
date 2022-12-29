@@ -1,8 +1,8 @@
 {
-   "name"        : "lua-path",
-   "description" : "File system path manipulation library.",
-   "link"        : "https://github.com/moteus/lua-path",
-   "tags"        : {"file system","operating system"},
+   "name"        : "busted",
+   "description" : "Elegant Lua unit testing",
+   "link"        : "https://github.com/lunarmodules/busted",
+   "tags"        : {"unit testing","unit tests"},
 
    "status" :
    {

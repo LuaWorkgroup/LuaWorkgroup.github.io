@@ -1,8 +1,8 @@
 {
    "name"        : "",
    "description" : "",
-   "category"    : "",
    "link"        : "",
+   "tags"        : {},
 
    "status" :
    {
@@ -13,9 +13,9 @@
 
    "lua" :
    {
-      "51" : null,
-      "52" : null,
-      "53" : null,
-      "54" : null
+      "51" : false,
+      "52" : false,
+      "53" : false,
+      "54" : false
    }
 }

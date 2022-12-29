@@ -1,9 +1,29 @@
 [
+   "data/busted.json",
+   "data/cgilua.json",
+   "data/copas.json",
    "data/cron.json",
+   "data/expadom.json",
+   "data/ldoc.json",
+   "data/luacheck.json",
+   "data/luacompat53.json",
+   "data/luacov.json",
    "data/luadate.json",
+   "data/luaexpat.json",
    "data/luafilesystem.json",
+   "data/lualace.json",
+   "data/lualogging.json",
    "data/luapath.json",
    "data/luaposix.json",
+   "data/luasocket.json",
+   "data/luasql.json",
+   "data/luassert.json",
+   "data/luasyslog.json",
    "data/luatz.json",
-   "data/lunix.json"
+   "data/lunix.json",
+   "data/md5.json",
+   "data/moonsand.json",
+   "data/penlight.json",
+   "data/say.json"
 ]
+

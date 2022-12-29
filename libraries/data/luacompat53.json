@@ -1,0 +1,21 @@
+{
+   "name"        : "lua-compat-5.3",
+   "description" : "Compatibility module providing Lua-5.3-style APIs for Lua 5.2 and 5.1",
+   "link"        : "https://github.com/lunarmodules/lua-compat-5.3",
+   "tags"        : {},
+
+   "status" :
+   {
+      "active"     : true,
+      "help"       : false,
+      "maintainer" : false
+   },
+
+   "lua" :
+   {
+      "51" : true,
+      "52" : true,
+      "53" : false,
+      "54" : false
+   }
+}

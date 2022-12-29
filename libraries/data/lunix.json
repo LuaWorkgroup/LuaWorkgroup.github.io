@@ -1,8 +1,8 @@
 {
-   "category"    : "File System and OS",
    "name"        : "lunix",
-   "link"        : "http://25thandclement.com/~william/projects/lunix.html",
    "description" : "Bindings to common Unix system APIs, striving for thread-safety.",
+   "link"        : "http://25thandclement.com/~william/projects/lunix.html",
+   "tags"        : {"posix","file system","operating system"},
 
    "status" :
    {
@@ -16,6 +16,6 @@
       "51" : true,
       "52" : true,
       "53" : true,
-      "54" : false
+      "54" : true
    }
 }

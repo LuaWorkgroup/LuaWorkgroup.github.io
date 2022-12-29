@@ -1,0 +1,21 @@
+{
+   "name"        : "Penlight",
+   "description" : "A set of pure Lua libraries focusing on input data handling, functional programming, and OS path management",
+   "link"        : "https://github.com/lunarmodules/Penlight",
+   "tags"        : {},
+
+   "status" :
+   {
+      "active"     : true,
+      "help"       : false,
+      "maintainer" : false
+   },
+
+   "lua" :
+   {
+      "51" : true,
+      "52" : true,
+      "53" : true,
+      "54" : true
+   }
+}
