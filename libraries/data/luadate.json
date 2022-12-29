@@ -2,7 +2,7 @@
    "name"        : "LuaDate",
    "description" : "Date and time module with parsing, formatting, addition/subtraction, localization, and ISO 8601 support.",
    "link"        : "https://github.com/Tieske/date",
-   "tags"        : {"time","date"},
+   "tags"        : ["time","date"],
 
    "status" :
    {

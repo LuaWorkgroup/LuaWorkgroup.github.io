@@ -2,7 +2,7 @@
    "name"        : "LDoc",
    "description" : "LDoc is a LuaDoc-compatible documentation generator",
    "link"        : "https://github.com/lunarmodules/LDoc",
-   "tags"        : {"documentation","generator"},
+   "tags"        : ["documentation","generator"],
 
    "status" :
    {

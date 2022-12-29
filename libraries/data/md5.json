@@ -2,7 +2,7 @@
    "name"        : "MD5",
    "description" : "MD5 offers basic cryptographic facilities for Lua 5.1",
    "link"        : "https://github.com/lunarmodules/md5",
-   "tags"        : {"md5","checksum","cryptography"},
+   "tags"        : ["md5","checksum","cryptography"],
 
    "status" :
    {

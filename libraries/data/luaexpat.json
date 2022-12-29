@@ -2,7 +2,7 @@
    "name"        : "LuaExpat",
    "description" : "LuaExpat is a SAX XML parser based on the Expat library",
    "link"        : "https://github.com/lunarmodules/luaexpat",
-   "tags"        : {"sax","xml"},
+   "tags"        : ["sax","xml"],
 
    "status" :
    {

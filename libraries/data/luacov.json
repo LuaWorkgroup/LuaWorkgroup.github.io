@@ -2,7 +2,7 @@
    "name"        : "LuaCov",
    "description" : "LuaCov is a simple coverage analyzer for Lua code",
    "link"        : "https://github.com/lunarmodules/luacov",
-   "tags"        : {"code coverage","analyzer"},
+   "tags"        : ["code coverage","analyzer"],
 
    "status" :
    {

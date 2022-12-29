@@ -2,7 +2,7 @@
    "name"        : "LuaFileSystem",
    "description" : "Extends and complements Lua's built-in set of file system functions.",
    "link"        : "https://github.com/lunarmodules/luafilesystem",
-   "tags"        : {"file system","operating system"},
+   "tags"        : ["file system","operating system"],
 
    "status" :
    {

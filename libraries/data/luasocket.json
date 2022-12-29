@@ -2,7 +2,7 @@
    "name"        : "luasocket",
    "description" : "Network support for the Lua language",
    "link"        : "https://github.com/lunarmodules/luasocket",
-   "tags"        : {"network","socket","tcp","udp"},
+   "tags"        : ["network","socket","tcp","udp"],
 
    "status" :
    {

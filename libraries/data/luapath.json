@@ -2,7 +2,7 @@
    "name"        : "lua-path",
    "description" : "File system path manipulation library.",
    "link"        : "https://github.com/moteus/lua-path",
-   "tags"        : {"file system","operating system"},
+   "tags"        : ["file system","operating system"],
 
    "status" :
    {

@@ -2,7 +2,7 @@
    "name"        : "Say",
    "description" : "Lua string hashing library, useful for internationalization",
    "link"        : "https://github.com/lunarmodules/say",
-   "tags"        : {"string","hashing"},
+   "tags"        : ["string","hashing"],
 
    "status" :
    {

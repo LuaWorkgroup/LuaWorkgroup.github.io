@@ -1,8 +1,8 @@
-{
+[
    "name"        : "lunix",
    "description" : "Bindings to common Unix system APIs, striving for thread-safety.",
    "link"        : "http://25thandclement.com/~william/projects/lunix.html",
-   "tags"        : {"posix","file system","operating system"},
+   "tags"        : ["posix","file system","operating system"],
 
    "status" :
    {
@@ -18,4 +18,5 @@
       "53" : true,
       "54" : true
    }
-}
+]
+

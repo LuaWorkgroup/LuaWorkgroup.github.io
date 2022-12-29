@@ -2,7 +2,7 @@
    "name"        : "copas",
    "description" : "Copas is a dispatcher based on coroutines that can be used by TCP/IP servers",
    "link"        : "https://github.com/lunarmodules/copas",
-   "tags"        : {"dispatcher","tcp","udp","network"},
+   "tags"        : ["dispatcher","tcp","udp","network"],
 
    "status" :
    {

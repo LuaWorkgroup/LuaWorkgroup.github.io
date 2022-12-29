@@ -2,7 +2,7 @@
    "name"        : "moon-sand",
    "description" : "Sandbox to mess with CI deployments using LunarModules CI key(s)",
    "link"        : "https://github.com/lunarmodules/moon-sand",
-   "tags"        : {},
+   "tags"        : [],
 
    "status" :
    {

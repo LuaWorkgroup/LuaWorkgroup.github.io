@@ -2,7 +2,7 @@
    "name"        : "Luacheck",
    "description" : "A tool for linting and static analysis of Lua code",
    "link"        : "https://github.com/lunarmodules/luacheck",
-   "tags"        : {"linter","linting","static analysis","code checker"},
+   "tags"        : ["linter","linting","static analysis","code checker"],
 
    "status" :
    {

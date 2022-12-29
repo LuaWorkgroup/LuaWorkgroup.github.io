@@ -2,7 +2,7 @@
    "name"        : "LuaLogging",
    "description" : "A simple API to use logging features in Lua",
    "link"        : "https://github.com/lunarmodules/lualogging",
-   "tags"        : {"logging"},
+   "tags"        : ["logging"],
 
    "status" :
    {

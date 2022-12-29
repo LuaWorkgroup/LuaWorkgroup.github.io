@@ -2,7 +2,7 @@
    "name"        : "luaposix",
    "description" : "Bindings for POSIX APIs, including curses.",
    "link"        : "https://github.com/luaposix/luaposix",
-   "tags"        : {"posix","file system","operating system"},
+   "tags"        : ["posix","file system","operating system"],
 
    "status" :
    {

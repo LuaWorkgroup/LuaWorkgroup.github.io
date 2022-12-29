@@ -2,7 +2,7 @@
    "name"        : "Lace",
    "description" : "Lua Access Control Engine",
    "link"        : "https://github.com/lunarmodules/lua-lace",
-   "tags"        : {},
+   "tags"        : [],
 
    "status" :
    {

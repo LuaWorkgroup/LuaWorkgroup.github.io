@@ -2,7 +2,7 @@
    "name"        : "cron",
    "description" : "Time-related functions for Lua, inspired by JavaScript's setTimeout and setInterval.",
    "link"        : "https://github.com/kikito/cron.lua",
-   "tags"        : {"cron","time"},
+   "tags"        : ["cron","time"],
 
    "status" :
    {

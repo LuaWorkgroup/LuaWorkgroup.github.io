@@ -2,7 +2,7 @@
    "name"        : "luasyslog",
    "description" : "Addon for lualogging to log to the system log on unix systems",
    "link"        : "https://github.com/lunarmodules/luasyslog",
-   "tags"        : {"syslog","log","logging","unix"},
+   "tags"        : ["syslog","log","logging","unix"],
 
    "status" :
    {

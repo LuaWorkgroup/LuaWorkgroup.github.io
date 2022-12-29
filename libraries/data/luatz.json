@@ -2,7 +2,7 @@
    "name"        : "luatz",
    "description" : "Time, date, and timezone library.",
    "link"        : "https://github.com/daurnimator/luatz",
-   "tags"        : {"time","date","timezone"},
+   "tags"        : ["time","date","timezone"],
 
    "status" :
    {

@@ -2,7 +2,7 @@
    "name"        : "busted",
    "description" : "Elegant Lua unit testing",
    "link"        : "https://github.com/lunarmodules/busted",
-   "tags"        : {"unit testing","unit tests"},
+   "tags"        : ["unit testing","unit tests"],
 
    "status" :
    {

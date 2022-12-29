@@ -2,7 +2,7 @@
    "name"        : "Luassert",
    "description" : "Assertion library for Lua",
    "link"        : "https://github.com/lunarmodules/luassert",
-   "tags"        : {"assert","assertion"},
+   "tags"        : ["assert","assertion"],
 
    "status" :
    {
