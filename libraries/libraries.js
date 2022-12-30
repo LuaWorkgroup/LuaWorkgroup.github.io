@@ -6,13 +6,13 @@ var Data          = []
 // var Categories = []
 var DDMSelection  = "ddmall" // DropDownMenu initialization
 
-var Unknown       = '<td><span class="grey"><span class="glyphicon glyphicon-minus"></span></span></td>'
-var Supported     = '<td><span class="green"><span class="glyphicon glyphicon-ok"></span></span></td>' 
-var NotSupported  = '<td><span class="red"><span class="glyphicon glyphicon-remove"></span></span></td>'
-var Active        = '<span class="glyphicon glyphicon-heart"></span>'
-var Dead          = '<span class="glyphicon glyphicon-flag"></span>'
-var HelpNeeded    = '<span class="glyphicon glyphicon-plus"></span>'
-var NewMaintainer = '<span class="glyphicon glyphicon-user"></span>'
+var Unknown       = '<span title="Unknown" class="grey"><span class="glyphicon glyphicon-minus"></span></span>'
+var Supported     = '<span title="Supported" class="green"><span class="glyphicon glyphicon-ok"></span></span>'
+var NotSupported  = '<span title="Not supported "class="red"><span class="glyphicon glyphicon-remove"></span></span>'
+var Active        = '<span title="Active" class="glyphicon glyphicon-heart"></span>'
+var Dead          = '<span title="Unmaintained" class="glyphicon glyphicon-flag"></span>'
+var HelpNeeded    = '<span title="Help needed" class="glyphicon glyphicon-plus"></span>'
+var NewMaintainer = '<span title="New maintainer" class="glyphicon glyphicon-user"></span>'
 
 // >>>
 
@@ -42,41 +42,24 @@ function fillTable() // <<<
 
       else if(DDMSelection == "ddmnew")    { if(Data[i].status.maintainer == false){continue} }
 
+
+      // Add maintainance status
+      var modstatus = (Data[i].status.active     ? Active : Dead )
+                    + (Data[i].status.help       ? HelpNeeded : '' )
+                    + (Data[i].status.maintainer ? NewMaintainer : '')
+
+      // Adds support to Lua versions
+      var modluaver = '';
+      for (let ver=51; ver<=54; ver++) {
+         let info = Data[i].lua[ver.toString(10)]
+         let support = info ? Supported : ( info == false ? NotSupported : Unknown )
+         modluaver += `<td luaver="${ver.toString(10).replace(/^(.)/,"$1.")}">${support}</td>`
+      }
+
       var tr = tbody.insertRow(-1)
-
-      tr.innerHTML += '<td><a href="'+Data[i].link+'" target="_blank">'+Data[i].name+'</a></td>'
-
-      tr.innerHTML += '<td>'+Data[i].description+'</td>'
-
-      var tdstatus = tr.insertCell(-1);
-
-      if(Data[i].status.active){ tdstatus.innerHTML += Active }
-      else { tdstatus.innerHTML += Dead }
-
-      if(Data[i].status.help){ tdstatus.innerHTML += HelpNeeded }
-
-      if(Data[i].status.maintainer){ tdstatus.innerHTML += NewMaintainer }
-
-
-      if(Data[i].lua["51"]){ tr.innerHTML += Supported }
-      else{
-         if(Data[i].lua["51"] == false){ tr.innerHTML += NotSupported }
-         else{ tr.innerHTML += Unknown }}
-
-      if(Data[i].lua["52"]){ tr.innerHTML += Supported }
-      else{
-         if(Data[i].lua["52"] == false){ tr.innerHTML += NotSupported }
-         else{ tr.innerHTML += Unknown }}
-
-      if(Data[i].lua["53"]){ tr.innerHTML += Supported }
-      else{
-         if(Data[i].lua["53"] == false){ tr.innerHTML += NotSupported }
-         else{ tr.innerHTML += Unknown }}
-
-      if(Data[i].lua["54"]){ tr.innerHTML += Supported }
-      else{
-         if(Data[i].lua["54"] == false){ tr.innerHTML += NotSupported }
-         else{ tr.innerHTML += Unknown }}
+      tr.innerHTML += `<td><a href="${Data[i].link}" target="_blank">${Data[i].name}</a></td>`
+      tr.innerHTML += `<td>${Data[i].description}</td>`
+      tr.innerHTML += `<td title="status">${modstatus}</td>${modluaver}`
    }
 } // >>>
 
@@ -206,4 +189,4 @@ $(document).ready(function() // <<<
 //       }
 //    }); // >>>
 
-// vim: fmr=<<<,>>> fdm=marker
+// vim: fmr=<<<,>>> fdm=marker sts=3 ts=3 sw=3
